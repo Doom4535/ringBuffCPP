@@ -1,0 +1,4 @@
+ringBuffBaseCPP.hpp         - Defines the components that should be common to all the ringBuff implementations
+ringBuffDynamicCPP.hpp      - Defines a ringBuff implenentation that is built on top of std::vector; a middle ground for resize and performance
+ringBuffDynamicListCPP.hpp  - Defines a ringBuff implementation that is built on top of a linked list; should be the fastest to resize, but slowest performing
+ringBuffStaticCPP.hpp       - Defines a ringBuff implementation that is built on top of an array; should perform the fastest if the buffer is not resized, slowest to resize (has to copy the buffer into a new one)
